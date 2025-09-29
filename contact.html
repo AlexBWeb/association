@@ -2,71 +2,73 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>APTB - Association de protection des tétards Bitérroise</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>APTB - Association de protection des tétards Bitérroise</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-  <header id="top" class="md:sticky top-0 z-50 pb-4 shadow-md mx-auto">
-    <nav class="bg-emerald-800 text-white md:text-lg">
-      <ul class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2">
-        <li>
-          <img class="w-24 md:w-32 m-5 rounded-full" src="/media/frog-1278117_1280.jpg" alt="logo du site">
-        </li>
-        <li class="hover:bg-emerald-600 hover:text-lime-50">
-          <a href="/index.html">Page d'Acceuil</a>
-        </li>
-        <li class="hover:bg-emerald-600 hover:text-lime-50">
-          <a href="/activities.html">Activités</a>
-        </li>
-        <li class="hover:bg-emerald-600 hover:text-lime-50">
-          <a href="/actu.html">Actualités</a>
-        </li>
-        <li class="hover:bg-emerald-600 hover:text-lime-50">
-          <a href="/contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section
-    class="bg-[url(/media/james-wainscoat-gcPERjX8nNQ-unsplash.jpg)] w-full max-h-100 overflow-hidden hover:shadow-xl pb-4">
-    <h1 class="text-3xl md:text-4xl font-bold text-emerald-50 text-center">
-      Site officieux de l'APTB - L'Association de protection des tétards
-      Biterroise
-    </h1>
-    <h3 class="py-20 text-3xl md:text-4xl font-bold text-emerald-50 italic text-center">
-      "SAUVONS LES TÉTARDS AVANT QU'IL NE SOIT TROP TARD"
-    </h3>
-  </section>
+    <header id="top" class="md:sticky top-0 z-50 pb-4 shadow-md mx-auto">
+        <nav class="bg-emerald-800 text-white md:text-lg">
+            <ul class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2">
+                <li>
+                    <img class="w-24 md:w-32 m-5 rounded-full" src="/media/icon.png" alt="logo du site">
+                </li>
+                <li class="hover:bg-emerald-600 hover:text-lime-50">
+                    <a href="/index.html">Page d'Acceuil</a>
+                </li>
+                <li class="hover:bg-emerald-600 hover:text-lime-50">
+                    <a href="/activities.html">Activités</a>
+                </li>
+                <li class="hover:bg-emerald-600 hover:text-lime-50">
+                    <a href="/actu.html">Actualités</a>
+                </li>
+                <li class="hover:bg-emerald-600 hover:text-lime-50">
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section
+        class="bg-[url(/media/james-wainscoat-gcPERjX8nNQ-unsplash.jpg)] w-full max-h-100 overflow-hidden hover:shadow-xl pb-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-emerald-50 text-center">
+            Site officieux de l'APTB - L'Association de protection des tétards
+            Biterroise
+        </h1>
+        <h3 class="py-20 text-3xl md:text-4xl font-bold text-emerald-50 italic text-center">
+            "SAUVONS LES TÉTARDS AVANT QU'IL NE SOIT TROP TARD"
+        </h3>
+    </section>
     <main class="max-w-4xl mx-auto p-6 mt-6">
-      <h2 class="text-xl font-bold text-emerald-800 mb-4">
-        Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se
-        passe !
-      </h2>
-      <p>Entrez vos informations dans le formulaire ci-dessous :</p>
-      <form action="#" method="post">
-        <label for="name">Votre Nom :</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Votre email :</label>
-        <input type="email" id="email" name="email" required />
-        <label for="objet">Votre message :</label>
-        <textarea id="objet" rows="8" maxlength="200" required></textarea>
-        <button class="bg-emerald-700 text-white font-bold py-2 px-4 rounded 
+        <h2 class="text-xl font-bold text-emerald-800 mb-4">
+            Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se
+            passe !
+        </h2>
+        <p>Entrez vos informations dans le formulaire ci-dessous :</p>
+        <form class="bg-white p-6 rounded-lg shadow-lg flex flex-col gap-4" action="#" method="post">
+            <label class="font-bold" for="name">Votre Nom :</label>
+            <input class="border border-gray-300 rounded p-2 focus:ring-emerald-400" type="text" id="name" name="name"
+                required />
+            <label class="font-bold" for="email">Votre email :</label>
+            <input class="border border-gray-300 rounded p-2 focus:ring-emerald-400" type="email" id="email"
+                name="email" required />
+            <label class="font-bold" for="objet">Votre message :</label>
+            <textarea class="border border-gray-300 rounded p-2 focus:ring-emerald-400" id="objet" rows="8"
+                maxlength="200" required></textarea>
+            <button class="bg-emerald-700 text-white font-bold py-2 px-4 rounded 
         hover:bg-emerald-500" type="submit">Envoyer</button>
-      </form>
+        </form>
     </main>
-    <footer class="bg-emerald-800 text-white text-center p-6 mt-8">
-      <ul>
-        <li><a href="#top">Retourner en haut de la page</a></li>
-        <li><a href="#">Suivez-nous sur Instagram</a></li>
-        <li><a href="#">Suivez-nous sur Tiktok</a></li>
-        <li><a href="#">Suivez-nous sur Youtube</a></li>
-      </ul>
+    <footer class="bg-emerald-800 text-white flex align-center justify-center p-6 mt-8">
+        <ul>
+            <li><a href="#top">Retourner en haut de la page</a></li>
+            <li><img class="w-24 md:w-32 m-5" src="media/ChatGPT Image 29 sept. 2025, 15_42_44.png" alt="collab"></li>
+        </ul>
     </footer>
-  </body>
+</body>
+
 </html>
