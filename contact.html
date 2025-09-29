@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>APTB - Association de protection des tétards Bitérroise</title>
-    <link rel="stylesheet" hrdef="style.css" />
-    <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <header id="top" class="md:sticky top-0 z-50 pb-4 shadow-md mx-auto">
-      <nav
-        class="bg-[url(/media/jeffrey-hamilton-DcyR0dNSZVU-unsplash.jpg)] text-white md:text-lg"
-      >
-        <ul
-          class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2"
-        >
-          <li>
-            <img
-              class="w-24 md:w-32 m-5 rounded-full"
-              src="/media/frog-1278117_1280.jpg"
-              alt="logo du site"
-            />
-          </li>
-          <li class="hover:bg-emerald-600 hover:text-lime-50">
-            <a href="/index.html">Page d'Acceuil</a>
-          </li>
-          <li class="hover:bg-emerald-600 hover:text-lime-50">
-            <a href="/activities.html">Activités</a>
-          </li>
-          <li class="hover:bg-emerald-600 hover:text-lime-50">
-            <a href="/actu.html">Actualités</a>
-          </li>
-          <li class="hover:bg-emerald-600 hover:text-lime-50">
-            <a href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--Contact (formulaire HTML – pas besoin de backend, juste une mise en forme correcte)-->
-    <section
-      class="bg-[url(/media/james-wainscoat-gcPERjX8nNQ-unsplash.jpg)] w-full max-h-100 overflow-hidden hover:shadow-xl pb-4"
-    >
-      <h1 class="text-3xl md:text-4xl font-bold text-green-900 text-center">
-        Site officieux de l'APTB - L'Association de protection des tétards
-        Biterroise
-      </h1>
-      <h3
-        class="py-20 text-3xl md:text-4xl font-bold text-emerald-50 italic text-center"
-      >
-        "SAUVONS LES TÉTARDS AVANT QU'IL NE SOIT TROP TARD"
-      </h3>
-    </section>
-    <main>
-      <h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>APTB - Association de protection des tétards Bitérroise</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <header id="top" class="md:sticky top-0 z-50 pb-4 shadow-md mx-auto">
+    <nav class="bg-emerald-800 text-white md:text-lg">
+      <ul class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2">
+        <li>
+          <img class="w-24 md:w-32 m-5 rounded-full" src="/media/frog-1278117_1280.jpg" alt="logo du site">
+        </li>
+        <li class="hover:bg-emerald-600 hover:text-lime-50">
+          <a href="/index.html">Page d'Acceuil</a>
+        </li>
+        <li class="hover:bg-emerald-600 hover:text-lime-50">
+          <a href="/activities.html">Activités</a>
+        </li>
+        <li class="hover:bg-emerald-600 hover:text-lime-50">
+          <a href="/actu.html">Actualités</a>
+        </li>
+        <li class="hover:bg-emerald-600 hover:text-lime-50">
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section
+    class="bg-[url(/media/james-wainscoat-gcPERjX8nNQ-unsplash.jpg)] w-full max-h-100 overflow-hidden hover:shadow-xl pb-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-emerald-50 text-center">
+      Site officieux de l'APTB - L'Association de protection des tétards
+      Biterroise
+    </h1>
+    <h3 class="py-20 text-3xl md:text-4xl font-bold text-emerald-50 italic text-center">
+      "SAUVONS LES TÉTARDS AVANT QU'IL NE SOIT TROP TARD"
+    </h3>
+  </section>
+    <main class="max-w-4xl mx-auto p-6 mt-6">
+      <h2 class="text-xl font-bold text-emerald-800 mb-4">
         Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se
         passe !
       </h2>
@@ -66,7 +56,8 @@
         <input type="email" id="email" name="email" required />
         <label for="objet">Votre message :</label>
         <textarea id="objet" rows="8" maxlength="200" required></textarea>
-        <button type="submit">Envoyer</button>
+        <button class="bg-emerald-700 text-white font-bold py-2 px-4 rounded 
+        hover:bg-emerald-500" type="submit">Envoyer</button>
       </form>
     </main>
     <footer class="bg-emerald-800 text-white text-center p-6 mt-8">
