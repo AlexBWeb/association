@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>APT - Association de protection des tétards</title>
+    <title>APT - Association de protection des tétards Bitérroise</title>
     <link rel="stylesheet" href="style.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header>
+    <header id="top">
       <img src="" alt="logo du site">
       <nav>
         <ul>
@@ -19,15 +20,29 @@
         </ul>
       </nav>
     </header>
-    <!--Contact (formulaire HTML – pas besoin de backend, juste une mise en forme correcte-->
+    <!--Contact (formulaire HTML – pas besoin de backend, juste une mise en forme correcte)-->
+    <section class="bg-[url(/media/jeffrey-hamilton-DcyR0dNSZVU-unsplash.jpg)] h-500">
+      <h1>Site officieux de l'APTB - L'Association de protection des tétards Biterroise</h1>
+    </section>
     <main>
+        <h2>Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se passe !</h2>
+        <p>Entrez vos informations dans le formulaire ci-dessous :</p>
+            <form action="#" method="post">
+            <label for="name">Votre Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="objet">Votre message :</label>
+            <textarea id="objet" rows="8" maxlength="200" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </main>
     <footer>
         <ul>
-          <li><a href="#"></a>Retourner en haut de la page</li>
-          <li><a href="#"></a>Suivez-nous sur Instagram</li>
-          <li><a href="#"></a>Suivez-nous sur Tiktok</li>
-          <li><a href="#"></a>Suivez-nous sur Youtube</li>
+          <li><a href="#top">Retourner en haut de la page</a></li>
+          <li><a href="#">Suivez-nous sur Instagram</a></li>
+          <li><a href="#">Suivez-nous sur Tiktok</a></li>
+          <li><a href="#">Suivez-nous sur Youtube</a></li>
         </ul>
     </footer>
   </body>
