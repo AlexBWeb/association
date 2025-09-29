@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>APT - Association de protection des tétards Bitérroise</title>
-    <link rel="stylesheet" href="style.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>APTB - Association de protection des tétards Bitérroise</title>
+    <link rel="stylesheet" hrdef="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header id="top">
-      <img src="" alt="logo du site">
-      <nav>
-        <ul>
+    <header id="top" class="md:sticky top-0 z-50 p-4 shadow-md">
+      <nav class="bg-emerald-800 text-white md:text-lg">
+        <ul class="flex flex-col md:flex-row items-center justify-between gap-2">
+          <li><img class="w-24 md:w-32 m-5" src="/media/frog-1278117_1280.jpg" alt="logo du site" /></li>
           <li><a href="/index.html">Page d'Acceuil</a></li>
           <li><a href="/activities.html">Activités</a></li>
           <li><a href="/actu.html">Actualités</a></li>
@@ -21,29 +21,37 @@
       </nav>
     </header>
     <!--Contact (formulaire HTML – pas besoin de backend, juste une mise en forme correcte)-->
-    <section class="bg-[url(/media/jeffrey-hamilton-DcyR0dNSZVU-unsplash.jpg)] h-500">
-      <h1>Site officieux de l'APTB - L'Association de protection des tétards Biterroise</h1>
+    <section
+      class="bg-[url(/media/jeffrey-hamilton-DcyR0dNSZVU-unsplash.jpg)] h-300"
+    >
+      <h1 class="text-2xl md:text-3xl font-bold text-green-900 text-center">
+        Site officieux de l'APTB - L'Association de protection des tétards
+        Biterroise
+      </h1>
     </section>
     <main>
-        <h2>Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se passe !</h2>
-        <p>Entrez vos informations dans le formulaire ci-dessous :</p>
-            <form action="#" method="post">
-            <label for="name">Votre Nom :</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Votre email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="objet">Votre message :</label>
-            <textarea id="objet" rows="8" maxlength="200" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+      <h2>
+        Vous souhaitez vous inscrire à notre Newsletter ? C'est ici que ça se
+        passe !
+      </h2>
+      <p>Entrez vos informations dans le formulaire ci-dessous :</p>
+      <form action="#" method="post">
+        <label for="name">Votre Nom :</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Votre email :</label>
+        <input type="email" id="email" name="email" required />
+        <label for="objet">Votre message :</label>
+        <textarea id="objet" rows="8" maxlength="200" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </main>
     <footer>
-        <ul>
-          <li><a href="#top">Retourner en haut de la page</a></li>
-          <li><a href="#">Suivez-nous sur Instagram</a></li>
-          <li><a href="#">Suivez-nous sur Tiktok</a></li>
-          <li><a href="#">Suivez-nous sur Youtube</a></li>
-        </ul>
+      <ul>
+        <li><a href="#top">Retourner en haut de la page</a></li>
+        <li><a href="#">Suivez-nous sur Instagram</a></li>
+        <li><a href="#">Suivez-nous sur Tiktok</a></li>
+        <li><a href="#">Suivez-nous sur Youtube</a></li>
+      </ul>
     </footer>
   </body>
 </html>
