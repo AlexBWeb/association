@@ -14,7 +14,7 @@
 <body>
   <header id="top" class="md:sticky top-0 z-50 pb-4 shadow-md mx-auto">
     <nav class="bg-emerald-800 text-white md:text-lg">
-      <ul class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2">
+      <ul class="flex flex-col md:flex-row items-center justify-between gap-2 max-w-4xl mx-auto">
         <li>
           <img class="w-24 md:w-32 m-5 rounded-full" src="/media/icon.png" alt="logo du site">
         </li>
@@ -43,8 +43,9 @@
       "SAUVONS LES TÉTARDS AVANT QU'IL NE SOIT TROP TARD"
     </h3>
   </section>
-  <main class="bg-emerald-300 grid-cols-1 gap-6 max-w-6xl mx-auto p-6">
-    <section class="space-y-6">
+  <main class="bg-emerald-300 max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Section principale (prend 2 colonnes sur desktop) -->
+    <section class="space-y-6 lg:col-span-2">
       <article class="bg-white rounded-2xl p-6 hover:shadow-md border-2 border-emerald-300">
         <h2 class="text-2xl font-bold text-emerald-800 mb-4">Notre Mission : Sauver le plus de Tétards possible</h2>
         <p>
@@ -56,6 +57,7 @@
           des âges pour nous.
         </p>
       </article>
+
       <article class="bg-white rounded-2xl p-6 hover:shadow-md border-2 border-emerald-300">
         <h2 class="text-2xl font-bold text-emerald-800 mb-4">
           Le culte du Tétard : Une frénésie sans aucun sens ou une foi bien
@@ -64,14 +66,15 @@
         <p>
           Une des activités principale de nôtre association consiste en 3
           séances de prières devant la
-          <a href="https://www.proantic.com/en/624765-large-tadpole-in-bronze-numbered-signed.html">Grande Statue du
-            Tétard sacré.</a>
+          <a href="https://www.proantic.com/en/624765-large-tadpole-in-bronze-numbered-signed.html"
+            class="text-emerald-700 font-semibold hover:underline">Grande Statue du Tétard sacré.</a>
           En effet, bien que nous ne soyons pas une secte en apparence, beaucoup
           de nos activités s'apparentent à celles d'une secte. Mais seuls nos
           fidèles savent réellement quel est le pouvoir du tétard.
           Rejoignez-nous pour en savoir plus !
         </p>
       </article>
+
       <article class="bg-white rounded-2xl p-6 hover:shadow-md border-2 border-emerald-300">
         <h2 class="text-2xl font-bold text-emerald-800 mb-4">Un tétard de sauvé, c'est un tétard de sauvé.</h2>
         <p>
@@ -84,34 +87,54 @@
         </p>
       </article>
     </section>
-    <aside class="my-6 space-y-6">
+
+    <!-- Aside (se place à droite sur desktop) -->
+    <aside class="space-y-6">
       <article class="bg-emerald-50 rounded-2xl shadow-md p-6">
-        <h2>Ressources complémentaires</h2>
+        <h2 class="text-xl font-bold text-emerald-800 mb-3">Ressources complémentaires</h2>
         <p>
           Pour en savoir plus, rendez vous sur
-          <a class="hover:bg-emerald-300"
+          <a class="text-emerald-700 font-semibold hover:underline"
             href="https://afroghouse.org/rescuing-tadpoles-and-saving-frogs-preventive-collaboration/">A Frog House</a>
           et sur la
-          <a class="hover:bg-emerald-300" href="https://fr.wikipedia.org/wiki/T%C3%AAtard">page Wikipédia</a>
+          <a class="text-emerald-700 font-semibold hover:underline"
+            href="https://fr.wikipedia.org/wiki/T%C3%AAtard">page Wikipédia</a>
           pour en apprendre plus sur les tétards
         </p>
       </article>
+
       <article class="bg-emerald-50 rounded-2xl shadow-md p-6">
-        <h2>Faites un don !</h2>
+        <h2 class="text-xl font-bold text-emerald-800 mb-3">Faites un don !</h2>
         <p>
           Donnez nous votre argent en suivant le lien suivant :
-          <a class="hover:bg-emerald-300" href="https://savethefrogs.com/donate/">Je suis le lien !</a> Si vous hésitez,
-          dites-vous qu'on a plus besoin de cet argent que vous et c'est un
-          argument totalement valable, n'oubliez surtout pas : Un tétard de
-          sauvé, c'est un tétard de sauvé.
+          <a class="text-emerald-700 font-semibold hover:underline" href="https://savethefrogs.com/donate/">Je suis le
+            lien !</a>
+          Si vous hésitez, dites-vous qu'on a plus besoin de cet argent que vous
+          et c'est un argument totalement valable, n'oubliez surtout pas : Un
+          tétard de sauvé, c'est un tétard de sauvé.
         </p>
       </article>
     </aside>
   </main>
-  <footer class="bg-emerald-800 text-white flex align-center justify-center p-6 mt-8">
-    <ul>
-      <li><a href="#top">Retourner en haut de la page</a></li>
-      <li><img class="w-24 md:w-32 m-5" src="media/ChatGPT Image 29 sept. 2025, 15_42_44.png" alt="collab"></li>
+  <footer class="bg-emerald-800 text-white p-6 mt-8">
+    <ul class="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
+      <li>
+        <a class="hover:underline hover:text-emerald-200" href="#top">
+          Retourner en haut de la page
+        </a>
+      </li>
+      <li class="font-semibold">En collaboration avec :</li>
+      <li>
+        <img class="w-20 md:w-28 rounded-lg shadow-md" src="media/ChatGPT Image 29 sept. 2025, 15_42_44.png"
+          alt="collab 1">
+      </li>
+      <li> Arbre
+        <img class="w-20 md:w-28 rounded-lg shadow-md" src="media/image.jpg" alt="collab 2">
+      </li>
+      <li> Capyfriends
+        <img class="w-20 md:w-28 rounded-lg shadow-md" src="media/capyfriends.png"
+          alt="collab 3">
+      </li>
     </ul>
   </footer>
 </body>
